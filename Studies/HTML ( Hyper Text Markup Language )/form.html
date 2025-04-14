@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form>
+
+        <label for="username">Username :</label>
+        <input required type="text" name="username" maxlength="6"> <br> <hr>
+
+        <label for="password">Password :</label>
+        <input required type="password" name="password"><br> <hr>
+
+        <label for="Gender">Gender :</label> <!--RadioButton-->
+        <input type="radio" name="Gender" value="Male"> Male
+        <input type="radio" name="Gender" value="Female"> Female <br> <hr>
+
+        <label for="Course">Course :</label> <!--Checkbox-->
+        <input type="checkbox"> HTML
+        <input type="checkbox"> CSS <br> <hr>
+
+        Age Group :<select name="age" id=""> <!--Dropdown-->
+            <option>10-20</option>
+            <option>20-30</option>
+            <option>30-40</option>
+            <option>40-50</option>
+        </select> <br> <hr>
+
+        Comment : <textarea name="Comment" id="" rows="1" cols=""></textarea> <br> <hr> <!--Textarea-->
+
+        <input type="submit" value="Fill"> <!--Submit-->
+        <input type="reset" value="Reset"> <!--Reset-->
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,14 @@
+/* For Color  */
+h1{
+    color: cadetblue;
+}
+
+/* For Background */
+
+div{
+    height: 200px;
+    background-image: url(/Studies/wallpaperflare.com_wallpaper.jpg);
+    background-repeat:  no-repeat;
+    background-position: 50px 50px;
+    background-attachment:fixed;
+}
