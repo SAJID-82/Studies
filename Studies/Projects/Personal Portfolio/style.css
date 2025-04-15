@@ -369,4 +369,8 @@ main{
     .service{
         flex-wrap: wrap;
         }
+
+    header div p span{
+            color: white;
+    }
 }
