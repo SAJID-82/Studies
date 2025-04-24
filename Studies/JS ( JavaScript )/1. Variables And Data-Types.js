@@ -38,6 +38,8 @@
 
 //  Data Types in JavaScript
 
+// Primitive Data-Types
+
 // 1. Number
 // 2. String
 // 3. Boolean
@@ -46,4 +48,14 @@
 // 6. BigInt
 // 7. Symbol
 
-// 57:00 / 1:21:10
+// Non-Primitive Data-Types
+
+// Objects : Collection of different variables
+
+// const student = {
+//     name: "Sajid",
+//     age: 18,
+//     isPass: true,
+// }
+
+// console.log(student)
