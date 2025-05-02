@@ -76,7 +76,7 @@ boxs.forEach( (box) => {
                     conclusion.textContent =  `Winner : Player - X`;
             }
             else{
-                    conclusion.textContent = `Game Draw, Start new game`;
+                    conclusion.textContent = `Match Draw, Start new game`;
                     // count = 0;
             }
         }
