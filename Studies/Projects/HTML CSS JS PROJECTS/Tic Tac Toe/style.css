@@ -1,0 +1,59 @@
+body{
+    height: 97vh;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(grey, slategrey, darkgrey);
+}
+
+main{
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    place-items: center;
+    background-color: black;
+    padding: 25px;
+    border-radius: 25px;
+    color: white;
+}
+
+.game{
+    display: flex;
+    width: 250px;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.box{
+    width: 75px;
+    height: 75px;
+    color: black;
+    font-size: 40px;
+    background-color: white;
+    border-radius: 50%;
+    border: none;
+    transition: all 0.3s;
+}
+
+.box:disabled{
+    border: 5px solid red;
+}
+
+.conc{
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+
+.newGame, .reset-btn {
+    color: white;
+    background-color: rgb(162, 162, 162);
+    padding: 5px 15px 5px 15px ;
+    border: none;
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+
+
+.newGame:hover, .reset-btn:hover{
+    background-color: white;
+    color: black;
+}
