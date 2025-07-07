@@ -86,3 +86,41 @@
 
 // console.log(findDifference([ 7, 6, 16 ], [ 26, 9, 26 ])) // ➞ 5412
 
+// // 34. Spaces Between Each Character
+// // Create a function that takes a string and returns a string with spaces in between all of the characters.
+
+// function spaceMeOut(str){
+//     // if(str === "space"){
+//     //     return str.replace("space", "s p a c e");
+//     // }
+
+//     // else if(str === "far out"){
+//     //     return str.replace("far out", "f a r   o u t");
+//     // }
+
+//     // else if(str === "elongated musk"){
+//     //     return str.replace("elongated musk", "e l o n g a t ed   m u s k");
+//     // }
+
+//     return str.split("").join(" ");
+// }
+
+// // Examples
+// console.log(spaceMeOut("space")) // ➞ "s p a c e"
+
+// console.log(spaceMeOut("far out")) // ➞ "f a r   o u t"
+
+// console.log(spaceMeOut("elongated musk")) // ➞ "e l o n g a t e d   m u s k"
+
+// 35. ES6: Destructuring Arrays II
+// You can assign variables from nested arrays like this:
+
+const arr = ["cars", "planes", ["trains", ["motorcycles"]]]
+
+let [trans1, trans2, [trans3, [trans4]]] = arr;
+
+console.log(trans1) // outputs "cars"
+console.log(trans2) // outputs "planes"
+console.log(trans3) // outputs "trains"
+console.log(trans4) // outputs "motorcycles"
+// With ES6, you can assign variables from arrays in a much more succinct way.
