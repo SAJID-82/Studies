@@ -209,36 +209,61 @@
 
 // console.log(birthdayCakeCandles([82, 49, 82, 82, 41, 82, 15, 63, 38, 25])) // ➞ 4
 
-// 54. Cleaning Up Messy Arrays
-// Create a function that takes an array. This array will contain numbers represented as strings.
+// // 54. Cleaning Up Messy Arrays
+// // Create a function that takes an array. This array will contain numbers represented as strings.
 
-// Your function should split this array into two new arrays. The first array should contain only even numbers. The second only odd. Then, wrap these two arrays in one main array and return it.
+// // Your function should split this array into two new arrays. The first array should contain only even numbers. The second only odd. Then, wrap these two arrays in one main array and return it.
 
-// Return an empty array if there are no even numbers, or odd.
+// // Return an empty array if there are no even numbers, or odd.
 
-function cleanUpArray(arr){
-    let newArr = arr.map((elm) => {
-        return Number(elm)
-    })
+// function cleanUpArray(arr){
+//     let newArr = arr.map((elm) => {
+//         return Number(elm)
+//     })
 
-    let forOdd = [];
-    let forEven = [];
-    for(let i = 0; i < arr.length; i++){
-        if((arr[i] % 2) === 0){
-            forEven.push(arr[i])
-        }else if((arr[i] % 2) === 1){
-            forOdd.push(arr[i])
-        }
+//     let forOdd = [];
+//     let forEven = [];
+//     for(let i = 0; i < arr.length; i++){
+//         if((arr[i] % 2) === 0){
+//             forEven.push(arr[i])
+//         }else if((arr[i] % 2) === 1){
+//             forOdd.push(arr[i])
+//         }
+//     }
+    
+//     return [forEven, forOdd];
+
+// }
+
+// // Examples
+// console.log(cleanUpArray(["8"])) // ➞ [[8], []]
+
+// console.log(cleanUpArray(["11"])) // ➞ [[], [11]]
+
+// console.log(cleanUpArray(["7", "4", "8"])) // ➞ [[4, 8], [7]]
+
+// console.log(cleanUpArray(["9", "4", "5", "8"])) // ➞ [[4, 8], [9, 5]]
+
+
+// 55. Largest Numbers
+// Create a function that takes two arguments of an array of numbers arr and a constant number n and returns the n largest numbers from the given array.
+
+function largestNumbers(n, arr){
+    arr.sort((a,b) =>  b - a); 
+
+    let newArr = [];
+    for(let i = 0; i < n; i++){
+        newArr.push(arr[i])
     }
-    return [forEven, forOdd]
 
+    return newArr.sort();
 }
 
 // Examples
-console.log(cleanUpArray(["8"])) // ➞ [[8], []]
+console.log(largestNumbers(2, [4, 3, 2, 1])) // ➞ [3, 4]
 
-console.log(cleanUpArray(["11"])) // ➞ [[], [11]]
+console.log(largestNumbers(1, [7, 19, 4, 2])) // ➞ [19]
 
-console.log(cleanUpArray(["7", "4", "8"])) // ➞ [[4, 8], [7]]
+console.log(largestNumbers(3, [14, 12, 57, 11, 18, 16])) // ➞ [16, 18, 57]
 
-console.log(cleanUpArray(["9", "4", "5", "8"])) // ➞ [[4, 8], [9, 5]]
+console.log(largestNumbers(0, [1, 3, 4, 2])) // ➞ []
