@@ -90,15 +90,46 @@
 // Create a function that takes in an array of names and returns the name of the secret society.
 
 function societyName(arr){
-    let result = []
-    let finalResult = []
-    for(let i = 0 ; i < arr.length; i++){
-        result.push(arr[i].split(""));
-     for(let j = 0; j < result[i].length; j++){
-        finalResult.push(arr[i][j])
-     }
-    }
-    return finalResult
+    // let result = [];
+    // let finalResult = [];
+    // for(let i = 0; i < arr.length; i++){
+    //     result.push(arr[i]);
+    // }
+    // result.sort()
+
+    // if(result.length === 3){
+    // finalResult.push(result[0][0])
+    // finalResult.push(result[1][0])
+    // finalResult.push(result[2][0])
+    // }
+    // else if(result.length === 4){
+    // finalResult.push(result[0][0])
+    // finalResult.push(result[1][0])
+    // finalResult.push(result[2][0])
+    // finalResult.push(result[3][0])
+    // }else{
+    // finalResult.push(result[0][0])
+    // finalResult.push(result[1][0])
+    // finalResult.push(result[2][0])
+    // finalResult.push(result[3][0])
+    // finalResult.push(result[4][0])
+    // finalResult.push(result[5][0])
+    // }
+
+    // return finalResult.join("")
+
+    // let result = [];
+    // let finalResult = [];
+    // for(let i = 0; i < arr.length; i++){
+    //     result.push(arr[i])
+    // }
+    // result.sort()
+   
+    // for(let i = 0; i < result.length; i++){ 
+    //     finalResult.push(result[i][0])
+    // }
+    // return finalResult
+    
 }
 
 // Examples
