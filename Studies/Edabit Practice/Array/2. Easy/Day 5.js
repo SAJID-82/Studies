@@ -42,7 +42,13 @@
 // Given an array of 10 numbers, return the maximum possible total made by summing just 5 of the 10 numbers.
 
 function maxTotal(arr){
+    let sum = 0;
+    arr.sort((a, b) => b -a)
 
+    for(let i = 0; i < 5; i++){
+        sum += arr[i]
+    }
+    return sum
 }
 
 // Examples
