@@ -1,0 +1,377 @@
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(70deg, rgb(240, 240, 240) 50%, #00bfa6 50%);
+    margin: 0;
+    padding: 0;
+    height:100vh;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+}
+
+header div p{
+    font-size: 30px;
+}
+
+header div p span{
+    color: #00bfa6;
+}
+
+header div{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li a{
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.Home-li{
+    border-bottom: 2px solid white;
+}
+
+nav ul li:hover{
+    border-bottom: 2px solid white;
+}
+
+.social ul{
+    margin-top: 40px;
+    padding: 0px;
+    background-color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.social ul li{
+    padding: 10px 8px 14px 7px;
+    list-style-type: none;
+    color: rgb(180, 180, 180);
+}
+
+.social ul li:hover{
+    color: black;
+}
+
+main{
+    display: flex;
+    margin-top: 5%;
+}
+
+.Intro{
+    width: 600px;
+    margin-left: 50px;
+}
+
+.helloT{
+    font-size: 35px;
+    color: #00a892;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+.NameT{
+    font-weight: 700;
+    font-size: 45px;
+    letter-spacing: 2px;
+}
+
+.ProfessT{
+    font-size: 20px;
+}
+
+.loremT{
+    font-size: 18px;
+    
+}
+
+.HireMe{
+    color: white;
+    background-color: #00a892;
+    border: none;
+    padding: 10px 35px 10px 35px;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.Images{
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 350px;
+    height: 350px;
+    background-image: url("Brilliant\ Man.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-position: center;
+    border: 10px solid white;
+}
+
+.HireMe:hover{
+    background-color: #00bfa6;
+}
+
+
+.about{
+    color: White;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 80px;
+    text-align: center;
+    background-color:#00bfa6;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.abtT{
+    font-size: 25px;
+    color: black;
+    border-bottom: 2px solid black;
+    width: max-content;
+    padding-left: 30px;
+}
+
+.aboutMe{
+    line-height: 25px;
+    padding: 10px;
+}
+
+
+.service{
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.service-text{
+    font-size: 30px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.service div{
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color:#00bfa6;
+}
+
+.service div i{
+    color: red;
+}
+
+.service-description{
+    color: white;
+}
+
+.contact{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    background-color: #fff;
+    flex-wrap: wrap;
+    flex-basis: 150px;
+}
+
+.contact div{
+    padding-top: 20px;
+}
+
+.location{
+    margin-left: 20px;
+}
+
+.mail{
+    margin-top: 25px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.mail input{
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    background-color: #333;
+    padding: 5px;
+    color: white;
+}
+
+.contact-e{
+    padding-left: 20px;
+}
+
+.contact-no{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.sub-button:hover{
+    background-color: #555;
+}
+
+
+/* Media Queries */
+
+/* For Tablets */
+
+@media screen and (max-width: 768px) {
+    nav ul li a {
+        font-size: 10px;
+        padding: 0px 5px 5px 5px;
+    }
+    
+    nav ul li:hover{
+        border-bottom: 1px solid white;
+    }
+
+    .Home-li{
+        border-bottom: 1px solid white;
+    }
+
+    .Home-li:hover{
+        border-bottom: 1px solid white;
+    }
+
+    .Images{
+        width: 400px;
+        height: 180px;
+        border-radius: 50%;
+    }
+
+    .helloT{
+        font-size: 25px;
+    }
+
+    .NameT{
+        font-size: 35px;
+    }
+
+    .ProfessT{
+        font-size: 12px;
+    }
+
+    .loremT{
+        font-size: 12px;
+    }
+
+    .HireMe{
+        padding: 6px 17px 6px 17px;
+        font-size: 12px;
+    }
+
+    header div p{
+        font-size: 24px;
+    }
+
+    .service{
+    flex-wrap: wrap;
+    }
+    
+}
+
+/* For Mobiles */
+
+@media screen and (max-width: 430px) {
+    nav ul li a{
+        font-size: 8px;
+        padding: 0px 2px 2px 2px;
+        color: black;
+        width: 100%;
+    }
+    
+    body{
+        min-width: 320px;
+        max-width: 430px
+    }
+
+    nav ul li:hover{
+        border-bottom: 1px solid white;
+    }
+
+    .Home-li{
+        border-bottom: 1px solid white;
+    }
+
+    .Home-li:hover{
+        border-bottom: 1px solid white;
+    }
+
+    .Images{
+        background-image: none;
+        border: none;
+    }
+
+    main{
+        display: block;
+        justify-content: center;
+    }
+
+    .helloT{
+        font-size: 18px;
+    }
+
+    .NameT{
+        font-size: 25px;
+    }
+
+    .ProfessT{
+        font-size: 10px;
+    }
+
+    .loremT{
+        font-size: 12px;
+        width: 300px;
+    }
+
+    .HireMe{
+        padding: 4px 14px 4px 14px;
+        font-size: 12px;
+
+    }
+
+    header div p{
+        font-size: 14px;
+    }
+
+    .social ul{
+        display: flex ;
+        justify-content: space-around;
+        border-radius: 0;
+    }
+
+    .social ul li{
+        border-radius: 0;
+    }
+    
+    main{
+        min-width: 320px;
+        max-width: 430px;
+    }
+
+    .about{
+        margin-top: -100px;
+    }
+
+    .service{
+        flex-wrap: wrap;
+        }
+
+    header div p span{
+            color: white;
+    }
+}
